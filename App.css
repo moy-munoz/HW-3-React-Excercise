@@ -1,0 +1,105 @@
+html {
+  font-family: Arial, sans-serif;
+  background-color: #E8E8E8;
+}
+
+body {
+  margin: 0;
+  padding-top: 0px;
+}
+
+.fixed-header {
+  top: 0;
+  width: 100%;
+  background-color: #1F1D69;
+  padding: 20px 0;
+}
+
+button {
+  height: 35px;
+  width: 150px;
+  text-align: left;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+}
+
+label, input {
+  position: relative;
+  display: block;
+  height: 35px;
+  width: 150px;
+  box-sizing: border-box;
+}
+
+.search {
+  background-color: #292787;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+  overflow: visible;
+  gap: 10px;
+}
+
+.dropdown {
+  display: flex;
+  position: relative;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 200px;
+  background-color: white;
+  border: 1px solid #ccc;
+  z-index: 999;
+}
+
+.dropdown-content a {
+  color: black;
+  text-decoration: none;
+  display: block;
+  padding: 8px 10px;
+}
+
+.dropdown-content a:hover {
+  background-color: #f0f0f0;
+}
+
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 16px;
+  padding: 20px;
+}
+
+.movie-card {
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.movie-card img {
+  width: 100%;
+}
+
+.movie-card p {
+  padding: 4px;
+  font-size: 14px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  padding: 20px;
+}
